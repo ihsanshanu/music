@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+        <style>
+            body{
+                background-image: url(1528093.webp);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        </style>
+    
+</head>
+</body>
+<body>
+    <body>
+        <header>
+
+          <h1>MUSIC</h1>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#"title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="menu.html" title="Menu" target="blank">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Contact Us">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Search">Search</a>
+                    </li>
+                    <li>
+                        <a href="#" title="About">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="text">
+            <p>Music Make Everything Better</p>
+            <img class="button" src="play(1).png" alt="play" id="icon">
+            <audio id="song" src="drop-it-124014.mp3" type="audio/mp3"></audio>
+        
+        </main>
+                 <footer>
+                   <center> <p>Copyright &copy;2023 hear it. All rights reserved</p></center>
+                 </footer>
+    
+                 <script>
+                       var song=document.getElementById('song');
+                       var icon=document.getElementById('icon');
+                       icon.onclick=function(){
+                        if(song.paused){
+                            song.play();
+                            icon.src="pause.png";
+                        }
+                         else{song.pause();
+                        icon.src="play(1).png";
+                       }
+                       }
+                 </script>
+
+
+        </main>
+        
+    </body>
+    </html>
+    
+</body>
+</html>
